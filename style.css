@@ -1,12 +1,82 @@
 :root {
    --orange-gradient: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-   --blue-color: #828bb2;
+   --color-blue: #828bb2;
+   --color-orange:  #ff6c00;
 }
 
 *{
    font-family: 'Roboto Slab', serif;
 }
+body {
+   height: 1500px;
+
+}
 
 h1, h2, h3, h4, h5, h6 {
    font-family: 'Poppins', sans-serif;
+}
+
+.sticky-wrapper {
+   position: absolute;
+   top: 40px;
+   width: 100%;
+   left: 50%;
+   transform: translateX(-50%);
+   padding-left: 0px;
+   padding-right: 0px;
+   transition: max-width 0.5s;
+  
+}
+
+.scrolled {
+   position: sticky;
+   top: 0px;
+   left: 0%;
+   transform: translateX(0%);
+   max-width: 100%;
+}
+
+#navbarNav .nav-link {
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 600;
+   margin-right: 20px;
+}
+
+#navbarNav .nav-item:last-child {
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: 600;
+   margin-right: 0px;
+}
+
+#navbarNav .nav-link:hover {
+   color: var(--color-orange);
+   
+}
+
+#searchWrapper {
+   height: 52px;
+   padding: 8px 16px;
+   background: var(--orange-gradient);
+   transition: all 0.5s;
+}
+#searchWrapper.closed {
+   height: 0px;
+   padding: 0px 16px;
+   overflow: hidden;
+}
+#searchWrapper input {
+   border: none;
+   background: transparent;
+}
+#searchWrapper input::placeholder {
+   color: rgb(156, 102, 102);
+}
+#searchWrapper input:focus {
+   box-shadow: none;
+}
+
+.btn-close:focus {
+   box-shadow: none !important;
 }
