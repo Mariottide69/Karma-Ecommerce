@@ -1,0 +1,12 @@
+:root {
+   --orange-gradient: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+   --blue-color: #828bb2;
+}
+
+*{
+   font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Poppins', sans-serif;
+}
