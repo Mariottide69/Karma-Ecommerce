@@ -4,7 +4,7 @@ const searchWrapper = document.querySelector('#searchWrapper');
 const btnCloseSearch = document.querySelector('#btnCloseSearch');
 
 window.addEventListener('scroll', () => {
-   if (window.scrollY > 40){
+   if (window.scrollY > 1){
       navbarWrapper.classList.add('scrolled')
    } else {
       navbarWrapper.classList.remove('scrolled')

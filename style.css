@@ -5,7 +5,7 @@
 }
 
 *{
-   font-family: 'Roboto Slab', serif;
+   font-family: 'Poppins', sans-serif;
 }
 body {
    height: 1500px;
@@ -13,26 +13,50 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Roboto Slab', serif;
 }
+
+.add-btn {
+   display: inline-block;
+   text-align: center;
+   line-height: 50px;
+   width: 50px;
+   height: 50px;
+   background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+   background-size: 200%;
+   background-position: 0;
+   color: white;
+   border-radius: 50%;
+   box-shadow: 0 5px 5px rgba(255, 108, 0, 0.4);
+   transition: all 0.5s;
+}
+
+.add-btn:hover {
+   color: white;
+   background-size: 100%;
+   box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
+}
+
+/* navbar */
 
 .sticky-wrapper {
    position: absolute;
    top: 40px;
+   left: 0;
+   right: 0;
    width: 100%;
-   left: 50%;
-   transform: translateX(-50%);
+   /* left: 50%;
+   transform: translateX(-50%); */
    padding-left: 0px;
    padding-right: 0px;
-   transition: max-width 0.5s;
+   transition: all 0.5s ease;
+   
   
 }
 
 .scrolled {
-   position: sticky;
+   position: fixed;
    top: 0px;
-   left: 0%;
-   transform: translateX(0%);
    max-width: 100%;
 }
 
@@ -79,4 +103,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-close:focus {
    box-shadow: none !important;
+}
+
+/* masthead */
+
+.masthead {
+   background: url(./img/banner-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+   .pers {
+      padding-top: 140px;
+   }
+   /* .scarpa {
+      max-height: 250px;
+   } */
 }
