@@ -8,7 +8,7 @@
    font-family: 'Poppins', sans-serif;
 }
 body {
-   height: 2500px;
+   height: 3500px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +35,12 @@ h1, h2, h3, h4, h5, h6 {
    background-size: 100%;
    box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
 }
+
+.divider {
+   height: .5px;
+   background: #000;
+   background: -webkit-linear-gradient(left, rgb(255,255,255) 0%, rgb(50,50,50) 50%, rgb(255,255,255) 100%);
+ }
 
 /* navbar */
 
@@ -126,6 +132,14 @@ h1, h2, h3, h4, h5, h6 {
    -webkit-text-fill-color: transparent;
 }
 
+.features-border {
+   border-right: 1px solid #eeeeee;
+}
+
+.features-card:hover {
+   transform: scale(1.08);
+}
+
 /* category-area */
 
 .category-link{
@@ -147,12 +161,76 @@ h1, h2, h3, h4, h5, h6 {
    left: 0;
    backdrop-filter: blur(1px);
    background: linear-gradient(to bottom, #00000000 , #00000099);
-   transition: all 0.5s;
+   transition: all 0.3s;
 }
 
 .category-link:hover span{
    top: 0;
 }
+
+/* card-product */
+
+.product-card {
+   max-width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.btn-action {
+   display: flex;
+   align-items: center;
+   padding: 0;
+   border: none;
+   background: transparent;
+   margin-right: 8px;
+   overflow: hidden;
+}
+
+.btn-action .btn-icon {
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--color-blue);
+   border-radius: 50%;
+   color: black;;
+   flex-shrink: 0;
+}
+
+.btn-action:hover .btn-icon {
+   background: var(--orange-gradient);
+}
+
+.btn-action span {
+   text-transform: uppercase;
+   font-size: 13px;
+   max-width: 0px;
+   height: auto;
+   white-space: nowrap;
+   transition: all 0.3s linear;
+}
+
+.btn-action:hover span {
+   margin-left: 8px;
+   margin-right: 8px;
+   max-width: 200px;
+   height: auto;
+}
+
+.swiper {
+   height: 500px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+   background-color: #000000;
+}
+
+.swiper-button-next:after , .swiper-button-prev:after {
+   color: #000000;
+}
+
+
 
 @media screen and (max-width: 992px) {
    .pers {
