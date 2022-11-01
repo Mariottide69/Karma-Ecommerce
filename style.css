@@ -136,9 +136,18 @@ h1, h2, h3, h4, h5, h6 {
    border-right: 1px solid #eeeeee;
 }
 
+.features-border-count {
+   border-right: 1px solid #ffffff;
+   border-left: 1px solid #ffffff;
+   min-width: 150px;
+}
+
+
 .features-card:hover {
    transform: scale(1.08);
 }
+
+
 
 /* category-area */
 
@@ -218,6 +227,9 @@ h1, h2, h3, h4, h5, h6 {
    height: auto;
 }
 
+
+/* carousel */
+
 .swiper {
    height: 500px;
 }
@@ -228,6 +240,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .swiper-button-next:after , .swiper-button-prev:after {
    color: #000000;
+}
+
+/* counter */
+
+.cta-counter-bg {
+   background: linear-gradient(#00000088 , #00000088) , url(./img/carousel-product/exclusive.jpg);
+   height: 100vh;
+   background-position: center;
+   background-size: cover;
+   flex-direction: column;
 }
 
 
